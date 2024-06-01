@@ -1,0 +1,53 @@
+
+
+Flask URL Shortener
+
+A simple URL shortener web application built with Flask.
+
+Table of Contents
+Overview
+Features
+Setup
+Usage
+Dependencies
+
+Overview
+This Flask application allows users to shorten long URLs into shorter, more manageable ones. It provides a simple web interface where users can enter a URL, and the application generates a unique short URL for them to use.
+
+Features
+Shorten long URLs into shorter, more manageable ones.
+Generates unique short URLs to avoid collisions.
+Stores URL mappings in a SQLite database.
+
+Setup
+    To set up and run the application locally, follow these steps:
+
+    Clone this repository to your local machine:
+
+        git clone https://github.com/your-username/url-shortener.git
+
+    Navigate to the project directory:
+
+        cd url-shortener
+
+        Install the dependencies:
+
+        pip install -r requirements.txt
+
+    Create the SQLite database:
+
+        python create_db.py
+
+Usage
+    To run the application, execute the following command in your terminal:
+
+        python app.py
+
+    Once the server is running, open your web browser and navigate to http://127.0.0.1:5000/. You can now start shortening URLs!
+
+Dependencies
+    The following dependencies are required to run the application:
+
+        Flask
+        SQLite3 (included in Python standard library)
+
